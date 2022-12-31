@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyBall </title>
+    <link rel="stylesheet" href="css/home_style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="resource/icon-white.png">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="resource/icon-white.png" alt="icon-green" id="icon-green" width="70px" class="icon">
+        <a id="logo" href="index.html">LuckyBall</a>
+        <ul class="options-header">
+            <li><a href="#">User_name</a></li>
+            <ion-icon name="person-circle-outline" class="icon_user" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight">wadwa</ion-icon>
+            <ion-icon name="menu-outline" class="icon_menu" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></ion-icon>
+        </ul>
+    </header>
+    <!-- user -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li class="list active">
+                    <a href="home.html" style=" --clr:#FF0000; ">
+                        <span class="icon2"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="sales.html" style=" --clr:#4BA65B; ">
+                        <span class="icon2"><ion-icon name="bowling-ball-outline"></ion-icon></span>
+                        <span class="text">Ventas</span>
+                    </a>
+                </li>
+                <li class="list registro">
+                    <a href="#" style=" --clr:#F1AF56; ">
+                        <span class="icon2"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                        <span class="text">Registro</span>
+                    </a>
+                    <div>
+                        <a href="register-c.html" id="op">Consolas</a>
+                        <a href="register-l.html" id="op">Listas</a>
+                        <a href="register-r.html" id="op">Recibos</a>
+                        <a href="register-s.html" id="op3">Sorteos</a>
+                            <a href="register-s-fu.html" id="op4">Fecha Unica</a>
+                            <a href="register-s-rf.html" id="op4">Rango de<br>Fechas</a>
+                            <a href="register-s.html" id="op4">Puesto o<br>Consola</a>
+                            <a href="register-s-g.html" id="op4" class="op5">General</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <a href="#" style=" --clr:#4DABDB; ">
+                        <span class="icon2"><ion-icon name="cash-outline"></ion-icon></span>
+                        <span class="text">Contabilidad</span>
+                    </a>
+                </li>
+                <li class="list settings">
+                    <a href="#" style=" --clr:#606060 ; ">
+                        <span class="icon2"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="text">Configuraciones</span>
+                    </a>
+                    <div>
+                        <a href="#" id="op">Administrador</a>
+                        <a href="#" id="op">Consola</a>
+                        <a href="#" id="op">Puesto</a>
+                        <a href="#" id="op">Vendedor</a>
+                        <a href="#" id="op">Sorteos</a>
+                        <a href="index.html" id="op">Dispositivos</a>
+                    </div>
+
+                </li>
+                <li class="list" id="exit">
+                    <a href="index.html" style=" --clr:#0a0a0a ; ">
+                        <span class="icon2"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="text">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-fluid-10 contenedor">
+
+        <div class="row " id="wallet2">
+
+            <div class="col-md-3   wallet" id="wallet">
+                <!-- panel 1-1 -->
+                <div class="row wallet-div2">
+                    <div class="col  wallet-div">
+                        <ion-icon name="wallet-outline" class="wallet_icon"></ion-icon>
+                    </div>
+                    <div class="col-6 wallet-text left_menu">
+                        <a id="money">Saldo Disponible</a>
+                        <a>000.000.000</a>
+                    </div>
+                </div>
+                <div class="row estatus">
+                    <div class="election2">
+                        <label class="election fw-bold">Puesto o Consola</label>
+                        <br>
+                        <select list="opctions1" class="select1 form-control">
+                            <option value="Consola 1">Consola 1</option>
+                            <option value="Puesto">Puesto 1</option>
+                        </select>
+                    </div>
+                    <div class="data">
+                        <p id="name" class="text-center fw-bold">name</p>
+                        <p class="fw-bold">Puestos:</p>
+                        <p class="text-center ">000.000</p>
+                        <p class="fw-bold">Ventas:</p>
+                        <p class="text-center ">000.000</p>
+                        <p class="fw-bold">Premios:</p>
+                        <p class="text-center ">000.000</p>
+                        <p class="fw-bold">Saldo:</p>
+                        <p class="text-center ">000.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-11 col-sm tab3">
+                <div class='row' id="elections">
+
+                    <div class="col  input-group mb-3">
+                        <input class="form-control" type="date" id="birthdayDate" name="birthday" tabindex="0"
+                            aria-label="Fecha de Nacimiento" required>
+                    </div>
+                    <div class="col input-group mb-3">
+                        <select class="form-control" aria-label="Numero">
+                            <option value="01">01</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                    <div class="col input-group mb-3">
+                        <select class="form-control" aria-label="Disabled select example">
+                            <option value="cliente 1">cliente1</option>
+                            <option value="cliente 2">cliente2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="container tbl-container">
+                    <div class="row tbl-fixed">
+                        <table class="table table-striped table-hover table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Recibo</th>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Sorteo</th>
+                                    <th scope="col">Premio</th>
+                                    <th scope="col">Cliente</th>
+                                    <th scope="col">Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="Estudiantes">
+                                    <td>00000</td>
+                                    <td>12/7/2022</td>
+                                    <td>Tica Día</td>
+                                    <td>129.000</td>
+                                    <td>Andrés Arce</td>
+                                    <td>Reclamado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

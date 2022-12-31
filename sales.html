@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuckyBall </title>
+    <link rel="stylesheet" href="css/sales.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="resource/icon-white.png">
+    <!-- ion-icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <img src="resource/icon-white.png" alt="icon-green" id="icon-green" width="70px" class="icon">
+        <a id="logo" href="index.html">Ventas</a>
+        <ul class="options-header">
+            <li><a href="#">User_name</a></li>
+            <ion-icon name="person-circle-outline" class="icon_user" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">wadwa</ion-icon>
+            <ion-icon name="menu-outline" class="icon_menu" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample"></ion-icon>
+        </ul>
+    </header>
+    <!-- user -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            ...
+        </div>
+    </div>
+    <!-- menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul>
+                <li class="list active">
+                    <a href="home.html" style=" --clr:#FF0000; ">
+                        <span class="icon2"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="sales.html" style=" --clr:#4BA65B; ">
+                        <span class="icon2"><ion-icon name="bowling-ball-outline"></ion-icon></span>
+                        <span class="text">Ventas</span>
+                    </a>
+                </li>
+                <li class="list registro">
+                    <a href="#" style=" --clr:#F1AF56; ">
+                        <span class="icon2"><ion-icon name="bar-chart-outline"></ion-icon></span>
+                        <span class="text">Registro</span>
+                    </a>
+                    <div>
+                        <a href="register-c.html" id="op">Consolas</a>
+                        <a href="register-l.html" id="op">Listas</a>
+                        <a href="register-r.html" id="op">Recibos</a>
+                        <a href="register-s.html" id="op3">Sorteos</a>
+                            <a href="register-s-fu.html" id="op4">Fecha Unica</a>
+                            <a href="register-s-rf.html" id="op4">Rango de<br>Fechas</a>
+                            <a href="register-s.html" id="op4">Puesto o<br>Consola</a>
+                            <a href="register-s-g.html" id="op4" class="op5">General</a>
+                    </div>
+                </li>
+                <li class="list">
+                    <a href="#" style=" --clr:#4DABDB; ">
+                        <span class="icon2"><ion-icon name="cash-outline"></ion-icon></span>
+                        <span class="text">Contabilidad</span>
+                    </a>
+                </li>
+                <li class="list settings">
+                    <a href="#" style=" --clr:#606060 ; ">
+                        <span class="icon2"><ion-icon name="settings-outline"></ion-icon></span>
+                        <span class="text">Configuraciones</span>
+                    </a>
+                    <div>
+                        <a href="#" id="op">Administrador</a>
+                        <a href="#" id="op">Consola</a>
+                        <a href="#" id="op">Puesto</a>
+                        <a href="#" id="op">Vendedor</a>
+                        <a href="#" id="op">Sorteos</a>
+                        <a href="index.html" id="op">Dispositivos</a>
+                    </div>
+
+                </li>
+                <li class="list" id="exit">
+                    <a href="index.html" style=" --clr:#0a0a0a ; ">
+                        <span class="icon2"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="text">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- body -->
+    <div class="container">
+        <div class="row">
+            <div class="col tbl">
+                <div class="row">
+                    <label for="" class="title" id="title_s">Ventas</label>
+                    <div class="col-12 col-lg-6">
+                        <label for="" class="bold">Seleccione el tipo de sorteo</label>
+                        <select class="form-select" aria-label="Default select example" id="tipo_s_s">
+                            <option selected></option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="col-12">
+                            <label for="" class="bold">Sorteo</label>
+                            <a for="" class="timer bold">00:00:00</a>
+                            <select class="form-select" aria-label="Default select example" id="Sorteo_s">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- inicio tiempos -->
+                <div class="row" id="tiempos">
+                    <div class="col-12 col-md-6">
+                        <label for="" class="bold">Monto</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">₡</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="col-12">
+                            <label for="" class="bold">Numero</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6" style="padding-top: 20px; ">
+                        <button type="button" class="btn btn-success" >Procesar</button>
+                        <button type="button" class="btn btn-danger">Cancelar</button>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <table class="table ">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Numero</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr id="data">
+                                    <td>0</td>
+                                    <td>00</td>
+                                    <td class="btn-tbl2">
+                                        <ion-icon name="close-outline" style="color: #FF0000;" id="btn-1"></ion-icon>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- inicio reventado -->
+                <div class="row" id="reventado">
+                    <div class="col-12 col-md-6">
+                        <label for="" class="bold">Monto</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">₡</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="" class="bold">Reventado</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">₡</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="col-12">
+                            <label for="" class="bold">Numero</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-6" style="margin-top: 30px;">
+                        <button type="button" class="btn btn-success" >Procesar</button>
+                        <button type="button" class="btn btn-danger mt-10" >Cancelar</button>
+                    </div>
+                    <div class="col-12">
+                        <table class="table ">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Reventado</th>
+                                    <th scope="col">Numero</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr id="data">
+                                    <td>0</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td class="btn-tbl2">
+                                        <ion-icon name="close-outline" style="color: #FF0000;" id="btn-1"></ion-icon>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- inicio tripleta y parley -->
+                <div class="row" id="TyP">
+                    <div class="col-12 col-md-6">
+                        <div class="col-12">
+                            <label for="" class="bold">Numero 1</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="col-12">
+                            <label for="" class="bold">Numero 2</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <label for="" class="bold">Monto</label>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">₡</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                          </div>
+                    </div>
+                    <div class="col-6" style="margin-top: 30px;">
+                        <button type="button" class="btn btn-success" >Procesar</button>
+                        <button type="button" class="btn btn-danger mt-10" >Cancelar</button>
+                    </div>
+                    <div class="col-12">
+                        <table class="table ">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Monto</th>
+                                    <th scope="col">Reventado</th>
+                                    <th scope="col">Numero</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr id="data">
+                                    <td>0</td>
+                                    <td>00</td>
+                                    <td>00</td>
+                                    <td class="btn-tbl2">
+                                        <ion-icon name="close-outline" style="color: #FF0000;" id="btn-1"></ion-icon>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col tbl">
+                <div class="row tbl-fixed">
+                    <label for="" class="title title2">Tiquetes</label>
+                    <table class="table ">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Recibo</th>
+                                <th scope="col">Total</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody  class="table-group-divider">
+                            <tr id="data">
+                                <td>00000</td>
+                                <td>129.000</td>
+                                <td class="btn-tbl">
+                                    <ion-icon name="options-outline" class="options-tb" id="btn-1"></ion-icon>
+                                    <ul class="popup" id="op-1">
+                                        <li class="trash">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </li>
+                                        <li class="eye">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </li>
+                                        <li class="print">
+                                            <ion-icon name="print-outline"></ion-icon>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr id="data">
+                                <td>00000</td>
+                                <td>129.000</td>
+                                <td class="btn-tbl">
+                                    <ion-icon name="options-outline" class="options-tb" id="btn-1"></ion-icon>
+                                    <ul class="popup" id="op-1">
+                                        <li class="trash">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </li>
+                                        <li class="eye">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </li>
+                                        <li class="print">
+                                            <ion-icon name="print-outline"></ion-icon>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr id="Estudiantes">
+                                <td>00000</td>
+                                <td>129.000</td>
+                                <td class="btn-tbl">
+                                    <ion-icon name="options-outline" class="options-tb"></ion-icon>
+                                    <ul class="popup" id="2">
+                                        <li class="trash">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </li>
+                                        <li class="eye">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </li>
+                                        <li class="print">
+                                            <ion-icon name="print-outline"></ion-icon>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr id="data">
+                                <td>00000</td>
+                                <td>129.000</td>
+                                <td class="btn-tbl">
+                                    <ion-icon name="options-outline" class="options-tb"></ion-icon>
+                                    <ul class="popup">
+                                        <li class="trash">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </li>
+                                        <li class="eye">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </li>
+                                        <li class="print">
+                                            <ion-icon name="print-outline"></ion-icon>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr id="Estudiantes">
+                                <td>00000</td>
+                                <td>129.000</td>
+                                <td class="btn-tbl">
+                                    <ion-icon name="options-outline" class="options-tb"></ion-icon>
+                                    <ul class="popup">
+                                        <li class="trash">
+                                            <ion-icon name="trash-outline"></ion-icon>
+                                        </li>
+                                        <li class="eye">
+                                            <ion-icon name="eye-outline"></ion-icon>
+                                        </li>
+                                        <li class="print">
+                                            <ion-icon name="print-outline"></ion-icon>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/sales.js"></script>
+
+</html>
